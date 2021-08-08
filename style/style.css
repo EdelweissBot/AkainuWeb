@@ -43,8 +43,8 @@ li a:hover {
     justify-content: center;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 50px;
-    border: 4px solid black;
-    background-color: black;
+    border: 4px solid white;
+    background-color: white;
     font-weight: 600;
     display: flex;
 }
