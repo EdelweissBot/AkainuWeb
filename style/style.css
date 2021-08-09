@@ -38,7 +38,6 @@ h1{
 }
 
 .main{
-    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,6 +45,9 @@ h1{
     overflow: hidden;
 }
 
+.info{
+    margin-top: 140px;
+}
 
 .info-content{
     display: flex;
@@ -66,7 +68,7 @@ h1{
 }
 .info__title{
     color: #fff;
-    font-size: 64px;
+    font-size: 58px;
 }
 
 .info__about{
