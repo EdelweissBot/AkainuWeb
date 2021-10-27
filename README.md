@@ -1,3 +1,3 @@
 # AkainuWeb
 
-- Веб-сайт для дискорд бота [AkainuBot](https://sayhelloroman.github.io/AkainuWeb/)
+- Веб-сайт для дискорд бота [AkainuBot](https://akainubot.github.io/AkainuWeb/)
