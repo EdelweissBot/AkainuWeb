@@ -70,13 +70,13 @@ h1{
 }
 .info__title{
     color: #000;
-    font-size: 5vw;
+    font-size: 80px;
     font-family: 'Noto Sans', sans-serif;
 }
 
 .info__about{
     margin-top: 60px;
-    width: 50vw;
+    width: 8vw;
 
     line-height: 42px;
     font-family: 'Noto Sans', sans-serif;
@@ -88,6 +88,22 @@ h1{
     color: #000000;
 
     opacity: 0.7;
+}
+
+@media screen and (min-width: 780px) {
+    .info__about {
+        width: 40em;
+    }
+}
+
+@media screen and (max-width: 789px) {
+    .info__about {
+        width: 20em;
+    }
+    
+    .info__btn {
+        margin-top: 70px;
+    }
 }
 
 .info__btn{
