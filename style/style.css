@@ -72,6 +72,7 @@ h1{
     color: #000;
     font-size: 80px;
     font-family: 'Noto Sans', sans-serif;
+    overflow: hidden;
 }
 
 .info__about{
@@ -97,17 +98,23 @@ h1{
 
 @media screen and (max-width: 779px) {
     .info__about {
-        width: 19em;
-        font-size: 18px;
+        width: 17em;
+        font-size: 16px;
     }
 
     .info__btn {
         margin-top: 70px;
-        padding: 14px 40px 14px 40px;
+        padding: 10px 36px 10px 26px;
+        font-size:40px;
     }
 
     .info__title {
-        font-size: 60px;
+        font-size: 55px;
+    }
+
+    .inner{
+        padding-right: 12px;
+        padding-left: 12px;
     }
 }
 
