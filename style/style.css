@@ -76,7 +76,6 @@ h1{
 
 .info__about{
     margin-top: 60px;
-    width: 8vw;
 
     line-height: 42px;
     font-family: 'Noto Sans', sans-serif;
@@ -96,13 +95,19 @@ h1{
     }
 }
 
-@media screen and (max-width: 789px) {
+@media screen and (max-width: 779px) {
     .info__about {
-        width: 20em;
+        width: 19em;
+        font-size: 18px;
     }
-    
+
     .info__btn {
         margin-top: 70px;
+        padding: 14px 40px 14px 40px;
+    }
+
+    .info__title {
+        font-size: 60px;
     }
 }
 
