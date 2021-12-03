@@ -89,42 +89,6 @@ h1{
     opacity: 0.7;
 }
 
-@media screen and (min-width: 780px) {
-    .info__about {
-        width: 40em;
-    }
-
-    .info__btn {
-        padding: 18px 44px 18px 44px;
-        font-size:48px;
-    }
-
-    .info__title {
-        font-size: 80px;
-    }
-}
-
-@media screen and (max-width: 779px) {
-    .info__about {
-        width: 17em;
-        font-size: 16px;
-    }
-
-    .info__btn {
-        margin-top: 70px;
-        padding: 6px 26px 6px 26px;
-        font-size:40px;
-    }
-
-    .info__title {
-        font-size: 50px;
-    }
-
-    .inner{
-        padding-right: 6px;
-    }
-}
-
 .info__btn{
     border:none;
 
@@ -142,4 +106,26 @@ h1{
 
 .info__btn:hover{
     color: #b3b1b1;
+}
+
+@media only screen and (max-width : 720px) {
+    .info__btn {
+        padding: 12px 38px 12px 38px;
+        font-size:24px;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .info__about {
+        width: 40em;
+    }
+
+    .info__btn {
+        padding: 18px 44px 18px 44px;
+        font-size:48px;
+    }
+
+    .info__title {
+        font-size: 80px;
+    }
 }
