@@ -1,276 +1,176 @@
+<html>
+<head>
+    <title>Шаблоны сообщений</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; /* Убираем отступы */
+        }
 
-<!DOCTYPE HTML>
-<html lang="" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Шаблоны сообщений · GitBook</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
-        
-        
-        
-    
-    <link rel="stylesheet" href="gitbook/style.css">
 
-    
+        main {
+            width: 50%;
+            margin: 0 auto;
+            text-align: left;
+            font-family: 'Source Sans Pro', sans-serif;
+            display: block;
+        }
+
+        .vertical-menu {
+            width: 200px; /* Set a width if you like */
+        }
+
+        .huy {
+            list-style-type: none; /* Убираем маркеры */
+        }
+        .ulhuy {
+            margin: 0 0 0 0; /* Отступ слева в браузере IE и Opera */
+            padding: 0 0 0 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            width: 200px;
+        }
+
+        .vertical-menu a {
+            background-color: #F2F3F5; /* Grey background color */
+            color: black; /* Black text color */
+            display: block; /* Make the links appear below each other */
+            padding: 10px; /* Add some padding */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .vertical-menu a:hover {
+            background-color: #F2F3F5; /* Dark grey background on mouse-over */
+        }
+
+        .vertical-menu a.active {
+            color: #1e90ff; /* Add a green color to the "active/current" link */
+        }
+
+        #side-checkbox {
+            display: none;
+        }
+        .side-panel {
+            position: fixed;
+            z-index: 999999;
+            top: 0;
+            left: -360px;
+            background: #F2F3F5;
+            transition: all 0.5s;   
+            width: 320px;
+            height: 100vh;
+            box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+            color: #FFF;
+            padding: 40px 20px;
+        }
+        /* Оформление кнопки на странице */
+        #side-checkbox:checked + .side-panel {
+            left: 0;
+        }
+        /* Оформление кнопки на панеле */
+        .side-button-2 {
+            font-size: 30px;
+            border-radius: 20px;
+            position: absolute;
+            z-index: 1;
+            top: 8px;
+            right: 8px;
+            cursor: pointer;
+            transform: rotate(45deg);
+            color: black;    
+            transition: all 280ms ease-in-out;    
+        }
+        .side-button-2:hover {
+            transform: rotate(45deg) scale(1.1);    
+            color: black;
+        }
+
+        .img_open_menu{
+            padding: 10px 0px 0px 10px;
+        }
+        
+         code {
+            font-family: "Courier New", "Courier", monospace;
+            display: block;
+            padding: 15px;
+            margin: 5px 0px 5px;
+            width: auto;
+            overflow: initial;
+            font-size: .85em;
+            background-color: #f2f2f2;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid black;
+            width: 100%;
+        }
+        /* tr{
+            width: auto;
+        } */
+
+        th {
+            text-align: center;
+        }
+
+        thead, tbody{
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="side-checkbox" />
+    <div class="side-panel">
+        <label class="side-button-2" for="side-checkbox">+</label>    
+        <div class="vertical-menu">
             
+                <ul class="ulhuy">
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-        
-
-    
-
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-        
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="https://github.com/akainubot/AkainuWeb/blob/main/favicon.ico" type="image/x-icon">
-
-    
-    <link rel="next" href="variables.html" />
-    
-    
-    <link rel="prev" href="./" />
-    
-
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
-            
-                <nav role="navigation">
-                
-
-
-<ul class="summary">
-    
-    
-
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="./">
-            
-                <a href="https://akainubot.github.io/AkainuWeb/docs/">
-            
                     
-                    Главная
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
-        <li class="divider"></li>
-        
-        
-    
-        <li class="chapter active" data-level="2.1" data-path="template.html">
-            
-                <a href="https://akainubot.github.io/AkainuWeb/docs/template.html">
-            
+                        <li><a href="https://akainubot.github.io/AkainuWeb/docs/index.html">Главная</a></li>
                     
-                    Шаблоны сообщений
-            
-                </a>
-            
-
-            
-            <ul class="articles">
                 
-    
-        <li class="chapter " data-level="2.1.1" data-path="variables.html">
+                </ul>
+                <hr>
             
-                <a href="https://akainubot.github.io/AkainuWeb/docs/variables.html">
-            
+                <ul class="ulhuy">
+                
                     
-                    Переменные шаблонов
+                        <li class="huy"><a href="https://akainubot.github.io/AkainuWeb/docs/template.html" class="active">Шаблоны сообщений</a></li>
+                    
+                
+                    
+                        <li><a href="https://akainubot.github.io/AkainuWeb/docs/variables.html">Переменные шаблонов</a></li>
+                    
+                
+                </ul>
+                <hr>
             
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-    
-
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
+          </div>
     </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
-                
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Шаблоны сообщений</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <h1 id="&#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x44B;-&#x441;&#x43E;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x439;">&#x428;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x44B; &#x441;&#x43E;&#x43E;&#x431;&#x449;&#x435;&#x43D;&#x438;&#x439;</h1>
-<hr>
-<h2 id="&#x432;&#x441;&#x442;&#x430;&#x432;&#x43A;&#x430;-&#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x43D;&#x43D;&#x44B;&#x445;">&#x412;&#x441;&#x442;&#x430;&#x432;&#x43A;&#x430; &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x43D;&#x43D;&#x44B;&#x445;</h2>
-<p>&#x41F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x43D;&#x43D;&#x44B;&#x435; &#x432; &#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x435; &#x432;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x44E;&#x442;&#x441;&#x44F; &#x441; &#x43F;&#x43E;&#x43C;&#x43E;&#x449;&#x44C;&#x44E; &#x434;&#x432;&#x43E;&#x439;&#x43D;&#x44B;&#x445; &#x444;&#x438;&#x433;&#x443;&#x440;&#x43D;&#x44B;&#x445; &#x441;&#x43A;&#x43E;&#x431;&#x43E;&#x43A; &#x432; &#x43D;&#x443;&#x436;&#x43D;&#x43E;&#x435; &#x43C;&#x435;&#x441;&#x442;&#x43E; &#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x430;, &#x43D;&#x430;&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;:</p>
-<pre><code>&#x41F;&#x440;&#x438;&#x432;&#x435;&#x442;, {{ member.name }}!
-</code></pre><p>&#x412; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;&#x435; &#x432;&#x44B;&#x448;&#x435; &#x43F;&#x435;&#x440;&#x435;&#x43C;&#x435;&#x43D;&#x43D;&#x430;&#x44F; member.name &#x432;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x430; &#x432; &#x43D;&#x443;&#x436;&#x43D;&#x43E;&#x435; &#x43C;&#x435;&#x441;&#x442;&#x43E; &#x448;&#x430;&#x431;&#x43B;&#x43E;&#x43D;&#x430; &#x438; &#x43E;&#x431;&#x43E;&#x437;&#x43D;&#x430;&#x447;&#x435;&#x43D;&#x430; &#x434;&#x432;&#x43E;&#x439;&#x43D;&#x44B;&#x43C;&#x438; &#x444;&#x438;&#x433;&#x443;&#x440;&#x43D;&#x44B;&#x43C;&#x438; &#x441;&#x43A;&#x43E;&#x431;&#x43A;&#x430;&#x43C;&#x438;. &#x42D;&#x442;&#x43E; &#x437;&#x43D;&#x430;&#x447;&#x438;&#x442;, &#x447;&#x442;&#x43E;   &#x431;&#x443;&#x434;&#x435;&#x442; &#x437;&#x430;&#x43C;&#x435;&#x43D;&#x435;&#x43D;&#x43E; &#x43D;&#x430; &#x43D;&#x438;&#x43A; &#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x43E;&#x432;&#x430;&#x442;&#x435;&#x43B;&#x44F;, &#x442;&#x43E; &#x435;&#x441;&#x442;&#x44C; &#x432; &#x447;&#x430;&#x442; &#x440;&#x430;&#x441;&#x43F;&#x435;&#x447;&#x430;&#x442;&#x430;&#x435;&#x442;&#x441;&#x44F; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x435;&#x435;:</p>
-<pre><code>&#x41F;&#x440;&#x438;&#x432;&#x435;&#x442;, &#x41F;&#x43E;&#x43B;&#x44C;&#x437;&#x43E;&#x432;&#x430;&#x442;&#x435;&#x43B;&#x44C;!
-</code></pre><hr>
-
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
-                        </div>
-                    </div>
-                
+    <div class="side-button-1-wr">
+        <label class="side-button-1" for="side-checkbox">
+            <div class="side-b side-open">
+                <img src="D:\project\pybook\pybook\poloski.png" width="25" height="25" class="img_open_menu">
             </div>
-
-            
-                
-                <a href="https://akainubot.github.io/AkainuWeb/docs/" class="navigation navigation-prev " aria-label="Previous page: Главная">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="https://akainubot.github.io/AkainuWeb/docs/variables.html" class="navigation navigation-next " aria-label="Next page: Переменные шаблонов">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
-        
+        </label>
     </div>
 
-    <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Шаблоны сообщений","level":"2.1","depth":1,"next":{"title":"Переменные шаблонов","level":"2.1.1","depth":2,"path":"variables.md","ref":"variables.md","articles":[]},"previous":{"title":"Главная","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"template.md","mtime":"2021-10-15T08:35:35.300Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-15T08:39:17.583Z"},"basePath":".","book":{"language":""}});
-        });
-    </script>
-</div>
-
-        
-    <script src="gitbook/gitbook.js"></script>
-    <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-
-    </body>
+    <main>
+        <h1>Шаблоны сообщений</h1>
+<hr />
+<h2>Вставка переменных</h2>
+<p>Переменные в шаблоне вставляются с помощью двойных фигурных скобок в нужное место шаблона, например:</p>
+<pre><code>Привет, {{ member.name }}! 
+</code></pre>
+<p>В примере выше переменная member.name вставлена в нужное место шаблона и обозначена двойными фигурными скобками. Это значит, что  {{ member.name }} будет заменено на ник пользователя, то есть в чат распечатается следующее:</p>
+<pre><code>Привет, Пользователь!
+</code></pre>
+<hr />
+    </main>
+</body>
 </html>
-
