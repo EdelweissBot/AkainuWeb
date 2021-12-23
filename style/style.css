@@ -129,3 +129,19 @@ h1{
         font-size: 80px;
     }
 }
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.fa{
+    color: white;
+    text-decoration: none;  
+    padding-left: 10px
+}
